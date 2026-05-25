@@ -42,6 +42,29 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_ad_DkFh7EfGXI6SrYJLP5g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_5YE9MFh7EfGXI6SrYJLP5g",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_CEDc0FVxEfGPmNczpGELSw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_5YE9MFh7EfGXI6SrYJLP5g - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_CEDc0FVxEfGPmNczpGELSw - Dim_Teams",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_hb2m4Fh2EfGXI6SrYJLP5g",
     "version" : "0.1",
     "type" : "job"
