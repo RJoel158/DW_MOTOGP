@@ -23,6 +23,29 @@
   } ]
 }, {
   "baseItem" : {
+    "id" : "_hb2m4Fh2EfGXI6SrYJLP5g",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_CEDc0FVxEfGPmNczpGELSw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_telY8Fh2EfGXI6SrYJLP5g",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_CEDc0FVxEfGPmNczpGELSw - Dim_Circuits",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_telY8Fh2EfGXI6SrYJLP5g - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
     "id" : "_vCVE4FfMEfGNS-OmVLtd_w",
     "version" : "0.1",
     "type" : "job"
