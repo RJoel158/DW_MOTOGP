@@ -1,0 +1,22 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="(row3.rider_number == null || &quot;Sin datos&quot;.equals(row3.rider_number) || &quot;&quot;.equals(row3.rider_number.trim())) ? String.valueOf(java.util.concurrent.ThreadLocalRandom.current().nextInt(1, 100)) : row3.rider_number.trim()">
+  <variables name="row3.pk_rider_id" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.rider_full_name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.rider_number" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.rider_country_iso" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.rider_country_name" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.years_old" value="null" talendType="id_Integer" nullable="true"/>
+  <variables name="row3.birth_date" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.birth_city" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.profile_picture_url" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.portrait_picture_url" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.number_picture_url" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.helmet_picture_url" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.country_flag_url" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.load_date" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.Column14" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.Column15" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.Column16" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.Column17" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row3.Column18" value="null" talendType="id_String" nullable="true"/>
+</expression:EMFExpression>
