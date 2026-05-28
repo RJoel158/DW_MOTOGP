@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_b36U4FoxEfGwvs4N27gpkA" name="TX_RACES" dataPackage="_b36U4VoxEfGwvs4N27gpkA" Server="Localhost 127.0.0.1" FilePath="C:/Users/wiget/Downloads/Races.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_b36U4VoxEfGwvs4N27gpkA" name="default" dataManager="_b36U4FoxEfGwvs4N27gpkA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_b36U4loxEfGwvs4N27gpkA" id="_XR5MAFoxEfGwvs4N27gpkA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U41oxEfGwvs4N27gpkA" label="fk_event_id" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U5FoxEfGwvs4N27gpkA" label="fk_result_id" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U5VoxEfGwvs4N27gpkA" label="fk_rider_id" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U5loxEfGwvs4N27gpkA" label="fk_circuit_id" length="36" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U51oxEfGwvs4N27gpkA" label="fk_team_id" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U6FoxEfGwvs4N27gpkA" label="position" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U6VoxEfGwvs4N27gpkA" label="points" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U6loxEfGwvs4N27gpkA" label="gap_lap" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U61oxEfGwvs4N27gpkA" label="total_laps" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U7FoxEfGwvs4N27gpkA" label="rider_type" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U7VoxEfGwvs4N27gpkA" label="ground_condition" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U7loxEfGwvs4N27gpkA" label="humidity_condition" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U71oxEfGwvs4N27gpkA" label="weather_condition" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U8FoxEfGwvs4N27gpkA" label="track_condition" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U8VoxEfGwvs4N27gpkA" label="date" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U8loxEfGwvs4N27gpkA" label="month" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U81oxEfGwvs4N27gpkA" label="year" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U9FoxEfGwvs4N27gpkA" label="pk_race_id" length="64" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U9VoxEfGwvs4N27gpkA" label="load_date" length="15" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U9loxEfGwvs4N27gpkA" label="gap_first" length="7" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U91oxEfGwvs4N27gpkA" label="time" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_b36U-FoxEfGwvs4N27gpkA" label="average_speed" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
