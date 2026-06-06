@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:kI4eAz40Ohr7GPT6ZE9adU1bkbAxuSh37YMLzXeI" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:PqBhT71dFWhA1jWV94CXsx2HUuPTmYa5lQN6020L" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:OwYZqOKArgRc30idlbqmuCuPyKKkNn6ODEWTQ7/b" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Po9KkbxXovYcVAClwDbZWbpCQYHfXCFt82GgAiSw" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -300,9 +300,9 @@
       <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="teams">
-        <mapperTableEntries name="pk_team_id" expression="row1.pk_team_id " type="id_String"/>
-        <mapperTableEntries name="team_name" expression="row1.team_name " type="id_String"/>
-        <mapperTableEntries name="constructor_name" expression="row1.constructor_name " type="id_String"/>
+        <mapperTableEntries name="pk_team_id" expression="row3.pk_team_id " type="id_String"/>
+        <mapperTableEntries name="team_name" expression="row3.team_name " type="id_String"/>
+        <mapperTableEntries name="constructor_name" expression="row3.constructor_name " type="id_String"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="pk_team_id" type="id_String" nullable="true"/>
@@ -328,7 +328,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;greenbit_data_final&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;greenbit&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VMSjGzL31pUqsk8R8IoNVOqpOsQL95AxKUiaVUwGBQ7IzsTv3Bs="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7gEAa/6Zb5ceK0sS05hQbks0pWK2gjszp2If7Zv4LAolZG6FUEo="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;Dim_Teams&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>

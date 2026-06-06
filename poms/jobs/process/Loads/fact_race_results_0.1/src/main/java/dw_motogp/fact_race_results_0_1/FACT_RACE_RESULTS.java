@@ -2987,7 +2987,7 @@ public class FACT_RACE_RESULTS implements TalendJob {
 				String dbUser_tDBOutput_1 = "greenbit";
 
 				final String decryptedPassword_tDBOutput_1 = routines.system.PasswordEncryptUtil.decryptPassword(
-						"enc:routine.encryption.key.v1:kz3DvYe6EnEhjf3BUKGlKEk8RY9YMtNIZ1ebJLBrsejywWnX");
+						"enc:routine.encryption.key.v1:1hrlXLU8VVZlKvXhGjkUvtAh0BGkYdqBLl7JEWJjT43hkB2S");
 
 				String dbPwd_tDBOutput_1 = decryptedPassword_tDBOutput_1;
 				java.lang.Class.forName(driverClass_tDBOutput_1);
@@ -3402,12 +3402,6 @@ public class FACT_RACE_RESULTS implements TalendJob {
 
 								tHash_Lookup_row3.lookup(row3HashKey);
 
-								if (!tHash_Lookup_row3.hasNext()) { // G_TM_M_090
-
-									rejectedInnerJoin_tMap_1 = true;
-
-								} // G_TM_M_090
-
 							} // G_TM_M_020
 
 							if (tHash_Lookup_row3 != null && tHash_Lookup_row3.getCount(row3HashKey) > 1) { // G 071
@@ -3449,12 +3443,6 @@ public class FACT_RACE_RESULTS implements TalendJob {
 								row4HashKey.hashCodeDirty = true;
 
 								tHash_Lookup_row4.lookup(row4HashKey);
-
-								if (!tHash_Lookup_row4.hasNext()) { // G_TM_M_090
-
-									rejectedInnerJoin_tMap_1 = true;
-
-								} // G_TM_M_090
 
 							} // G_TM_M_020
 
@@ -3498,12 +3486,6 @@ public class FACT_RACE_RESULTS implements TalendJob {
 
 								tHash_Lookup_row5.lookup(row5HashKey);
 
-								if (!tHash_Lookup_row5.hasNext()) { // G_TM_M_090
-
-									rejectedInnerJoin_tMap_1 = true;
-
-								} // G_TM_M_090
-
 							} // G_TM_M_020
 
 							if (tHash_Lookup_row5 != null && tHash_Lookup_row5.getCount(row5HashKey) > 1) { // G 071
@@ -3545,12 +3527,6 @@ public class FACT_RACE_RESULTS implements TalendJob {
 								row6HashKey.hashCodeDirty = true;
 
 								tHash_Lookup_row6.lookup(row6HashKey);
-
-								if (!tHash_Lookup_row6.hasNext()) { // G_TM_M_090
-
-									rejectedInnerJoin_tMap_1 = true;
-
-								} // G_TM_M_090
 
 							} // G_TM_M_020
 
@@ -3594,12 +3570,6 @@ public class FACT_RACE_RESULTS implements TalendJob {
 
 								tHash_Lookup_row7.lookup(row7HashKey);
 
-								if (!tHash_Lookup_row7.hasNext()) { // G_TM_M_090
-
-									rejectedInnerJoin_tMap_1 = true;
-
-								} // G_TM_M_090
-
 							} // G_TM_M_020
 
 							if (tHash_Lookup_row7 != null && tHash_Lookup_row7.getCount(row7HashKey) > 1) { // G 071
@@ -3636,30 +3606,29 @@ public class FACT_RACE_RESULTS implements TalendJob {
 
 								RESULTS = null;
 
-								if (!rejectedInnerJoin_tMap_1) {
-
 // # Output table : 'RESULTS'
-									RESULTS_tmp.pk_race_id = row2.pk_race_id;
-									RESULTS_tmp.fk_event_id = row2.fk_event_id;
-									RESULTS_tmp.fk_rider_id = row2.fk_rider_id;
-									RESULTS_tmp.fk_circuit_id = row2.fk_circuit_id;
-									RESULTS_tmp.fk_team_id = row2.fk_team_id;
-									RESULTS_tmp.fk_date = row2.date;
-									RESULTS_tmp.position = row2.points;
-									RESULTS_tmp.points = row2.points == null ? java.math.BigDecimal.ZERO
-											: new java.math.BigDecimal(row2.points);
-									RESULTS_tmp.total_laps = row2.total_laps;
-									RESULTS_tmp.average_speed_kh = (row2.average_speed == null
-											|| row2.average_speed.trim().isEmpty()
-											|| !row2.average_speed.trim().matches("[-+]?\\d*\\.?\\d+")
-											|| Double.parseDouble(row2.average_speed.trim()) == 0.0)
-													? java.math.BigDecimal.valueOf(100 + (Math.random() * 90))
-															.setScale(2, java.math.RoundingMode.HALF_UP)
-													: new java.math.BigDecimal(row2.average_speed.trim());
-									RESULTS_tmp.ground_condition = row2.ground_condition;
-									RESULTS_tmp.weather_condition = row2.weather_condition;
-									RESULTS = RESULTS_tmp;
-								} // closing inner join bracket (2)
+								RESULTS_tmp.pk_race_id = row2.pk_race_id;
+								RESULTS_tmp.fk_event_id = row2.fk_event_id;
+								RESULTS_tmp.fk_rider_id = row2.fk_rider_id;
+								RESULTS_tmp.fk_circuit_id = row2.fk_circuit_id;
+								RESULTS_tmp.fk_team_id = row4.pk_team_id == null ? "-1" : row4.pk_team_id;
+								RESULTS_tmp.fk_date = row2.date;
+								RESULTS_tmp.position = row2.position == null || !row2.position.trim().matches("\\d+")
+										? null
+										: Integer.parseInt(row2.position.trim());
+								RESULTS_tmp.points = row2.points == null ? java.math.BigDecimal.ZERO
+										: new java.math.BigDecimal(row2.points);
+								RESULTS_tmp.total_laps = row2.total_laps;
+								RESULTS_tmp.average_speed_kh = (row2.average_speed == null
+										|| row2.average_speed.trim().isEmpty()
+										|| !row2.average_speed.trim().matches("[-+]?\\d*\\.?\\d+")
+										|| Double.parseDouble(row2.average_speed.trim()) == 0.0)
+												? java.math.BigDecimal.valueOf(100 + (Math.random() * 90)).setScale(2,
+														java.math.RoundingMode.HALF_UP)
+												: new java.math.BigDecimal(row2.average_speed.trim());
+								RESULTS_tmp.ground_condition = row2.ground_condition;
+								RESULTS_tmp.weather_condition = row2.weather_condition;
+								RESULTS = RESULTS_tmp;
 // ###############################
 
 							} // end of Var scope
@@ -9135,6 +9104,6 @@ public class FACT_RACE_RESULTS implements TalendJob {
 	ResumeUtil resumeUtil = null;
 }
 /************************************************************************************************
- * 270143 characters generated by Talend Open Studio for Data Integration on the
- * 30 de mayo de 2026, 12:12:21 BOT
+ * 269213 characters generated by Talend Open Studio for Data Integration on the
+ * 4 de junio de 2026, 17:12:01 BOT
  ************************************************************************************************/
